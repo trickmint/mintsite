@@ -1,65 +1,43 @@
-.window.is-bright{
-    display: block;
-    max-width: 350px;  
-}
+.window.is-bright {
+    max-width: 350px}
 
-.listeningto{
-    display: block;
+.listeningto {
     margin-left: 300px;
     margin-right: 300px;
     width: 300px;
-    max-width: 350px;
-}
+    max-width: 350px}
 
-.imagebuttons{
-    text-align:center;
-    display: block;
+.imagebuttons {
     margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
+    margin-right: auto}
 
-body{
-    background-image: url('assets/bg.png');
+html {
+    background-color: #9EE3FA;
+    background-image: url('assets/bg.jpg');
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom:20px;
-}
+    padding-bottom: 20px}
 
-.center{
-    text-align: center;
-}
-
-.randSpearmint{
-    text-align: center;
-}
+.center, .randSpearmint {
+    text-align: center}
 
 .randSpearmint img{
-    max-width:60%;
-}
+    max-width: 60%}
 
 .rainbowText {
     text-align: center;
-    position: relative;
-    margin: auto;
-    font-family:arial rgb(255, 255, 255);
-    font-size:25px;
-    background-image: 
-      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,yellow,orange,red ); 
+    font-size: 25px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,yellow,orange,red);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    animation: move 35s linear infinite;
-}
+    -webkit-text-fill-color: transparent;
+    animation: move 35s linear infinite}
 
 @keyframes move {
 	to {
-		background-position: 350vh;
-	}
-}
+		background-position: 350vh}}
 
-.kin{
+.kin {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-}
+    height: 200px}
