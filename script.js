@@ -203,7 +203,7 @@ var artists = [
         "skedgyedgy", 
         "skedgyedgy", 
         "blueyGH", 
-        "Nightcat#0001", 
+        "Nightcat", 
         "skedgyedgy",
         "lobsylobs"
     ];
