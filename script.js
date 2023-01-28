@@ -99,7 +99,8 @@ var spearmints = [
         "homestuckmintdgy.png", 
         "live trickmint reaction.png", 
         "winmint.png", 
-        "yiikmint.png"
+        "yiikmint.png",
+        "skedgy_comm_3_1.jpeg"
     ];
 
 var artists = [
@@ -203,7 +204,8 @@ var artists = [
         "skedgyedgy", 
         "blueyGH", 
         "Nightcat", 
-        "skedgyedgy"
+        "skedgyedgy",
+        "lobsylobs"
     ];
 
 var img;
