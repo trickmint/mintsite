@@ -14,7 +14,6 @@ var spearmints = [
         "birthdaymint 2.jpg", 
         "birthdaymint.png", 
         "BLANK SO COOL.jpg", 
-        "blep boys.png", 
         "btach_2_qt.png", 
         "comm by anna.jpg", 
         "comm by cindertabglow.png",
@@ -100,7 +99,9 @@ var spearmints = [
         "live trickmint reaction.png", 
         "winmint.png", 
         "yiikmint.png",
-        "skedgy_comm_3_1.jpeg"
+        "skedgy_comm_3_1.jpeg",
+        "spinda_comm_fb.png",
+        "0fTNupr8-upscale.png"
     ];
 
 var artists = [
@@ -117,8 +118,7 @@ var artists = [
         "crepebatter", 
         "N/A", 
         "teserex",
-        "blankkamikat", 
-        "teserex", 
+        "blankkamikat",  
         "pastaiils", 
         "aqttt_", 
         "cindertobglow", 
@@ -205,7 +205,9 @@ var artists = [
         "blueyGH", 
         "Nightcat", 
         "skedgyedgy",
-        "lobsylobs"
+        "lobsylobs",
+        "springlessecho",
+        "errorsalt"
     ];
 
 var img;
