@@ -101,7 +101,8 @@ var spearmints = [
         "yiikmint.png",
         "skedgy_comm_3_1.jpeg",
         "spinda_comm_fb.png",
-        "0fTNupr8-upscale.png"
+        "0fTNupr8-upscale.png",
+        "kitsunemint.png"
     ];
 
 var artists = [
@@ -207,7 +208,8 @@ var artists = [
         "skedgyedgy",
         "lobsylobs",
         "springlessecho",
-        "errorsalt"
+        "errorsalt",
+        "skedgyedgy"
     ];
 
 var img;
