@@ -9,7 +9,7 @@ var sources = new Array(
 var titles = new Array(
                     "Shallow Depths from Azure Mines - Evanbear1", "Its Always Too Late To Start Over - Chris Zabriskie", "Cereal Killa - Blue Wednesday", "Welcome! - RoccoW", 
                     "File Select from Super Mario Galaxy - Nintendo", "Able Sisters from Animal Crossing - Nintendo", "Bombs Over Brooklyn - Big Data", "circles! - nekodex", 
-                    "Nyan Cat - daniwell-p", "Butterfly - SMiLE.dk", "Two Trucks - Lemon Demon", "Triple Trouble (Tails Part) - Mike Geno",  "Reaganomics - Lemon Demon", 
+                    "Nyan Cat - daniwell-p", "Butterfly - SMiLE.dk", "Two Trucks - Lemon Demon", "Triple Trouble (Tails Part) - MarStarBro",  "Reaganomics - Lemon Demon", 
                     "Amalgam - Toby Fox", "WE ARE JAPANESE GOBLIN - Astral Trip", "Atrocity - Saster", "6 Trillion Years and One Night - kemu",  "Rainbow Tylenol - Kitsune^2", 
                     "7 PM from Animal Crossing - Nintendo", "Ivanushka - Lemon Demon", "Depths of the Mine - Evanbear1", "Ice Cavern - Evanbear1", "Mystery Mines - Evanbear1", 
                     "Still Alive from Portal Chiptune Remix - Chiptuverse", "Closing in - Garrett Williamson", "Breakout from 3D Dot Game Heroes - SuperSweep", "Chaoz Fantasy - ParagonX9", "Wocky - Paperkitty", 
