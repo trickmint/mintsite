@@ -102,7 +102,14 @@ var spearmints = [
         "skedgy_comm_3_1.jpeg",
         "spinda_comm_fb.png",
         "0fTNupr8-upscale.png",
-        "kitsunemint.png"
+        "kitsunemint.png",
+        "20230415_180503.jpg",
+        "blink.gif",
+        "Hug_sticker.png",
+        "Khong_Co_Tieu_e160_20230530104536.png",
+        "spearmint fanta.png",
+        "20230610_222347.jpg",
+        "silly spearmint.png"
     ];
 
 var artists = [
@@ -196,10 +203,10 @@ var artists = [
         "skedgyedgy", 
         "extrasome5", 
         "luna855", 
-        "JUSTICE61805644", 
+        "JADEN61805644", 
         "TheBigK#0001", 
         "fluffy_yyy", 
-        "JUSTICE61805644", 
+        "JADEN61805644", 
         "Cybexxr#0073", 
         "skedgyedgy", 
         "skedgyedgy", 
@@ -209,7 +216,14 @@ var artists = [
         "lobsylobs",
         "springlessecho",
         "errorsalt",
-        "skedgyedgy"
+        "skedgyedgy",
+        "JADEN61805644",
+        "FBatcat",
+        "HearterMobs",
+        "12_iona",
+        "alphautism",
+        "JADEN61805644",
+        "dinguscarrot"
     ];
 
 var img;
