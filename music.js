@@ -8,7 +8,7 @@ var sources = new Array(
 // Song names go here. They have to be in the same order as the MP3 files and both the arrays have to have the exact same number of items or it breaks horribly
 var titles = new Array(
                     "Shallow Depths from Azure Mines - Evanbear1", "Its Always Too Late To Start Over - Chris Zabriskie", "Cereal Killa - Blue Wednesday", "Welcome! - RoccoW", 
-                    "File Select from Super Mario Galaxy - Nintendo", "Able Sisters from Animal Crossing - Nintendo", "Bombs Over Brooklyn - Big Data", "circles! - nekodex", 
+                    "File Select from Super Mario Galaxy - Nintendo", "Able Sisters from Animal Crossing: City Folk - Nintendo", "Bombs Over Brooklyn - Big Data", "circles! - nekodex", 
                     "Nyan Cat - daniwell-p", "Butterfly - SMiLE.dk", "Two Trucks - Lemon Demon", "Triple Trouble (Tails Part) - MarStarBro",  "Reaganomics - Lemon Demon", 
                     "Amalgam - Toby Fox", "WE ARE JAPANESE GOBLIN - Astral Trip", "Atrocity - Saster", "6 Trillion Years and One Night - kemu",  "Rainbow Tylenol - Kitsune^2", 
                     "7 PM from Animal Crossing: New Leaf - Nintendo", "Ivanushka - Lemon Demon", "Depths of the Mine - Evanbear1", "Ice Cavern - Evanbear1", "Mystery Mines - Evanbear1", 
