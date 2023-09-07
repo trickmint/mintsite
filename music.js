@@ -31,8 +31,7 @@ function chooseMusic() {
     prev = rand; // Set the previous song ID the new ID we just chose so the next time this script is run it will avoid this new ID.
 
     // Sets audio source to item "randomNum" of list "sources".
-    // The string is put in (Wattson) graves because it lets you put variables in between the strings by doing ${VARNAME}.
-    audioSrc.src = `about/music/music_${sources[rand]}.mp3`;
+    audioSrc.src = "about/music/music_" + sources[rand] + ".mp3";
     titleTxt.textContent = titles[rand]; // Sets "Now Playing" text to the item "randomNum" of list "titles".
     audioSrc.play();
 }
