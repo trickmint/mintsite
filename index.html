@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="spearmint.css"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  Inject WebKit-specific gradients if on New 3DS
+          Done to avoid replacing gradients on modern browsers -->
+    <script>
+      if (navigator.userAgent.match(/New Nintendo 3DS/)) {
+          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.title-bar{background:-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
+      }
+      </script>
   </head>
 <body>
 
