@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--  Inject WebKit-specific gradients if on New 3DS
-          Done to avoid replacing gradients on modern browsers -->
+    Done to avoid replacing gradients on modern browsers -->
     <script>
       if (navigator.userAgent.match(/New Nintendo 3DS/)) {
           document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.title-bar{background:-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
@@ -32,14 +32,6 @@
   </div>
 </div>
 
-<!--<audio id="player" src="vincent.mp3"></audio>
-<div> 
-  <button onclick="document.getElementById('player').play()">Play</button> 
-  <button onclick="document.getElementById('player').pause()">Pause</button> 
-  <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-  <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-</div>-->
-
 
 <div class="window-body">
   <div class="center"><img src="assets/spinmint.gif" style="max-width: 5%;"> <img src="assets/logo.gif" style="max-width: 50%;"> <img src="assets/spinmint.gif" style="max-width: 5%;"><br>
@@ -51,8 +43,6 @@
       <button onclick="window.location.href = '#listeningto';">current song</button>
       <button id="playtoggle" onclick="togglePlay()">play/pause</button> 
       <button id="skip" onclick="skipSong()">skip song</button>
-      <!--!<button onclick="document.getElementById('song').volume += 0.1">vol +</button>-->
-      <!--!button onclick="document.getElementById('song').volume -= 0.1">vol -</button>--> 
     <br>
       <p>volume</p>
       <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
@@ -138,25 +128,6 @@
     </div>
 </div>
 
-<!-- TODO not working for some reason?? fix Soon™
-!<div class="window">
-  !<div class="title-bar">
-    !<div class="title-bar-text">hourly platinum foxes</div>
-      !<div class="title-bar-controls">
-        !<button aria-label="Minimize"></button>
-        !<button aria-label="Maximize"></button>
-        !<button aria-label="Close"></button>
-      !</div>
-    !</div>
-      !<div class="window-body">
-        !<center>
-          !<a class="twitter-timeline" data-width="1000" data-height="1000" data-theme="dark" href="https://twitter.com/platinumfoxes?ref_src=twsrc%5Etfw">Tweets by platinumfoxes</a> <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script> 
-        !</center>
-      !</div>
-    !</div>
-!</div>
-!-->
-
 <div class="window">
   <div class="title-bar">
     <div class="title-bar-text">cool fox website</div>
@@ -190,8 +161,6 @@
           --&gt; <a href="index.html"><img src="buttons/me.gif"></a> &lt;-- <br><br>
           <textarea rows="3" cols="40">&lt;a href="http://trickmint.gay"&gt;&lt;img src="http://trickmint.gay/buttons/me.gif"&gt;&lt;/a&gt;</textarea><br><br> 
           (You should probably not hotlink the image tho)
-          <!--print pack"C*",split/\D+/,`echo "16iII*o\U@{$/=$z;[(pop,pop,unpack"H*",<>
-          )]}\EsMsKsN0[lN*1lK[d2%Sa2/d0<X+d*lMLa^*lN%0]dsXx++lMlN/dsM0<J]dsJxp"|dc` -->
         </center>
       </div>
     </div>
