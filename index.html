@@ -43,8 +43,7 @@
       <button id="playtoggle" onclick="togglePlay()">play/pause</button> 
       <button id="skip" onclick="skipSong()">skip song</button>
     <br>
-      <p>volume</p>
-      <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
+      <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)" style="max-width:80px"></input>
       <div id="vol"></div>
     </div> 
   </div>
