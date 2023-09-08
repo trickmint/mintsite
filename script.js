@@ -100,7 +100,24 @@ var spearmints = [
         "live trickmint reaction.png", 
         "winmint.png", 
         "yiikmint.png",
-        "skedgy_comm_3_1.jpeg"
+        "skedgy_comm_3_1.jpeg",
+        "spinda_comm_fb.png",
+        "0fTNupr8-upscale.png",
+        "kitsunemint.png",
+        "20230415_180503.jpg",
+        "blink.gif",
+        "Hug_sticker.png",
+        "Khong_Co_Tieu_e160_20230530104536.png",
+        "spearmint fanta.png",
+        "20230610_222347.jpg",
+        "silly spearmint.png",
+        "yourselves.PNG",
+        "spearmint after killing scrunkly.png",
+        "3FB1C4C3-0399-4760-84E3-B58A6A174294.png",
+        "spinda_comm_7_i_think-transformed.jpeg",
+        "mint.png",
+        "image.png",
+        "fuck yoy.png"
     ];
 
 var artists = [
@@ -205,7 +222,24 @@ var artists = [
         "blueyGH", 
         "Nightcat#0001", 
         "skedgyedgy",
-        "lobsylobs"
+        "lobsylobs",
+        "springlessecho",
+        "errorsalt",
+        "skedgyedgy",
+        "JADEN61805644",
+        "FBatcat",
+        "HearterMobs",
+        "12_iona",
+        "alphautism",
+        "JADEN61805644",
+        "dinguscarrot",
+        "audio_ori",
+        "extrasome5",
+        "luna855",
+        "lobsylobs",
+        "cereious",
+        "extrasome5",
+        "cereious"
     ];
 
 var img;
@@ -223,7 +257,7 @@ function refreshSpearmint() {
     img.onload = hideLoadmint;
     div.classList.add("loadingmints");
     img.src = "spearmint/" + spearmints[rand];
-    artist.textContent = `by ${artists[rand]}`;
+    artist.textContent = "by " + artists[rand];
 }
 function onLoad() {
     img = document.getElementById("spearmint");
