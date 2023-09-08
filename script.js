@@ -109,7 +109,14 @@ var spearmints = [
         "Khong_Co_Tieu_e160_20230530104536.png",
         "spearmint fanta.png",
         "20230610_222347.jpg",
-        "silly spearmint.png"
+        "silly spearmint.png",
+        "yourselves.PNG",
+        "spearmint after killing scrunkly.png",
+        "3FB1C4C3-0399-4760-84E3-B58A6A174294.png",
+        "spinda_comm_7_i_think-transformed.jpeg",
+        "mint.png",
+        "image.png",
+        "fuck yoy.png"
     ];
 
 var artists = [
@@ -223,7 +230,14 @@ var artists = [
         "12_iona",
         "alphautism",
         "JADEN61805644",
-        "dinguscarrot"
+        "dinguscarrot",
+        "audio_ori",
+        "extrasome5",
+        "luna855",
+        "lobsylobs",
+        "cereious",
+        "extrasome5",
+        "cereious"
     ];
 
 var img;
