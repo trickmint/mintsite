@@ -2,7 +2,7 @@
 var sources = new Array(
                     "azure_shallow_depths", "always_too_late_to_start_over", "mark_rober", "shimeji_bgm", "smg_filesel", "the_tommyinnit", "bombs_over_brooklyn", "circles!", 
                     "nyan", "butterfly_ddr", "two_trucks", "triple_trouble_tails", "reaganomics", "amalgam", "japanese_goblin", "atrocity_fnf", "6trillion_years_and_a_night", 
-                    "rainbow_tylenol", "7pm_animalcrossing", "ivanushka", "depths_of_the_mine", "ice_cavern", "mystery_mines", "still_alive_chiptune", "closing_in", "breakout", 
+                    "rainbow_tylenol", "7pm_acnl", "ivanushka", "depths_of_the_mine", "ice_cavern", "mystery_mines", "still_alive_chiptune", "closing_in", "breakout", 
                     "chaoz_fantasy", "wocky", "nyaw", "scratch_post", "common_sense", "bad_citizen", "peak_picnic", "barf_city", "deep_blue", "pop_music", "pretender"
 );
 // Song names go here. They have to be in the same order as the MP3 files and both the arrays have to have the exact same number of items or it breaks horribly
