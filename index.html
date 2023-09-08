@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="spearmint.css"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  Inject WebKit-specific gradients if on New 3DS
+          Done to avoid replacing gradients on modern browsers -->
+    <script>
+      if (navigator.userAgent.match(/New Nintendo 3DS/)) {
+          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.title-bar{background:-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
+      }
+      </script>
   </head>
 <body>
 
@@ -95,10 +102,13 @@
         <br>
         i am asexual, panromantic, and a demiboy.
         <br>
-        some of my interests are: madness combat, murder drones, undertale / deltarune, glitchtale, and fnf.
+        i use any pronouns :3
+        <br>
+        some of my interests are: lapfox trax, <b>portal 2</b>, ut/dr, glitchtale, and underverse.
         <br>
         <br>
         <a href="kinlist"><button>epic kinlist</button></a>
+        <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34853-2c"><button>my guestbook</button></a>
         </center>
       </div>
     </div>
@@ -178,8 +188,8 @@
       <div class="window-body">
         <center>
           <b>this website has a button!</b><br><br>
-          --&gt; <a href="index.html"><img src="buttons/_me.gif"></a> &lt;-- <br><br>
-          <textarea rows="3" cols="40">&lt;a href="http://trickmint.gay"&gt;&lt;img src="http://trickmint.gay/buttons/_me.gif"&gt;&lt;/a&gt;</textarea><br><br> 
+          --&gt; <a href="index.html"><img src="buttons/me.gif"></a> &lt;-- <br><br>
+          <textarea rows="3" cols="40">&lt;a href="http://trickmint.gay"&gt;&lt;img src="http://trickmint.gay/buttons/me.gif"&gt;&lt;/a&gt;</textarea><br><br> 
           (You should probably not hotlink the image tho)
           <!--print pack"C*",split/\D+/,`echo "16iII*o\U@{$/=$z;[(pop,pop,unpack"H*",<>
           )]}\EsMsKsN0[lN*1lK[d2%Sa2/d0<X+d*lMLa^*lN%0]dsXx++lMlN/dsM0<J]dsJxp"|dc` -->
@@ -189,7 +199,7 @@
 </div>
 
 <div class = "imagebuttons" style="width:800px;">
-  <marquee>
+  <marquee truespeed scrollamount="1" scrolldelay="1">
     <a href="http://radio.kuro.gay/"><img src="buttons/skedgradio.gif"></a>
 
     <img src="buttons/antinft.gif"></img>
@@ -214,15 +224,15 @@
 
     <a href="https://twitter.com/cutieyosaf"><img src="buttons/yosaf.png"></a>
 
-    <a href="https://nightcat.gg/"><img src="buttons/nightcat.gif"></a>
+    <a href="https://youtube.com/@Nightcaat"><img src="buttons/nightcat.gif"></a>
 
     <a href="https://twitter.com/blueyGH"><img src="buttons/bluey.gif"></a>
 
     <a href="https://en.wikipedia.org/wiki/Sheldon_Cooper"><img src="buttons/booga.gif"></a>
 
-    <a href="https://www.roblox.com/games/8562822414/Jukes-Towers-of-Hell"><img src="buttons/jtoh.gif"></a>
-
     <a href="https://twitter.com/SG_NitroSilver"><img src="buttons/nitrosilver.gif"></a>
+
+    <a href="https://gayfennecs.github.io/"><img src="buttons/scrunkly.gif"></a>
   </marquee>
 </div>
 

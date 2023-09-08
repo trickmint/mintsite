@@ -30,11 +30,13 @@ html {
     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,yellow,orange,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: move 35s linear infinite}
+    animation: move 40s linear infinite}
 
 @keyframes move {
 	to {
-		background-position: 350vh}}
+		background-position: 350vh;
+    }
+}
 
 .kin {
     display: flex;
