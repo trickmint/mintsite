@@ -1,3 +1,7 @@
+.window.glass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)}
+
 .window.is-bright {
     max-width: 350px}
 

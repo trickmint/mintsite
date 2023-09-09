@@ -15,13 +15,13 @@
     Done to avoid replacing gradients on modern browsers -->
     <script>
       if (navigator.userAgent.match(/New Nintendo 3DS/)) {
-          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.title-bar{background:-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
+          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.window.glass>.title-bar{background:-webkit-linear-gradient(55deg,transparent 8%,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.3) 30%,rgba(0,0,0,.1) 32%,rgba(0,0,0,.3) 55%,transparent 57%,hsla(0,0%,100%,.3) 70%,transparent 72%)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
       }
       </script>
   </head>
 <body>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">home</div>
       <div class="title-bar-controls">
@@ -50,7 +50,7 @@
 </div>
 
 <div class="listeningto">
-  <div class="window is-bright" id="listeningto" role="dialog" aria-labelledby="dialog-title">
+  <div class="window glass is-bright" id="listeningto" role="dialog" aria-labelledby="dialog-title">
     <div class="title-bar">
     <div class="title-bar-text" id="dialog-title">trickmint radio.exe</div>
       <div class="title-bar-controls">
@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">about me</div>
       <div class="title-bar-controls">
@@ -95,7 +95,7 @@
       </div>
     </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">random spearmint</div>
       <div class="title-bar-controls">
@@ -121,7 +121,7 @@
     </div>
 </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">cool fox website</div>
       <div class="title-bar-controls">
@@ -139,7 +139,7 @@
     </div>
 </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">my button!</div>
       <div class="title-bar-controls">

@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="https://trickmint.gay/style.css"/>
     <link rel="stylesheet" href="https://trickmint.gay/spearmint.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  Inject WebKit-specific gradients if on New 3DS
+    Done to avoid replacing gradients on modern browsers -->
+    <script>
+      if (navigator.userAgent.match(/New Nintendo 3DS/)) {
+          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.window.glass>.title-bar{background:-webkit-linear-gradient(55deg,transparent 8%,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.3) 30%,rgba(0,0,0,.1) 32%,rgba(0,0,0,.3) 55%,transparent 57%,hsla(0,0%,100%,.3) 70%,transparent 72%)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
+      }
+      </script>
   </head>
 <body>
   <br>
@@ -27,7 +34,7 @@
   <br>
   <br>
   <br>
-  <div class="window active" style="max-width: 750px">
+  <div class="window glass active" style="max-width: 750px">
     <div class="title-bar">
       <div class="title-bar-text">the kin note.exe</div>
       <div class="title-bar-controls">
