@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--  Inject WebKit-specific gradients if on New 3DS
-          Done to avoid replacing gradients on modern browsers -->
+    Done to avoid replacing gradients on modern browsers -->
     <script>
       if (navigator.userAgent.match(/New Nintendo 3DS/)) {
-          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.title-bar{background:-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
+          document.querySelector("head").insertAdjacentHTML('beforeend', '<style>.window::before{background:-webkit-linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),-webkit-linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),-webkit-linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4}.window.glass>.title-bar{background:-webkit-linear-gradient(55deg,transparent 8%,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.3) 30%,rgba(0,0,0,.1) 32%,rgba(0,0,0,.3) 55%,transparent 57%,hsla(0,0%,100%,.3) 70%,transparent 72%)}[role="button"],button{background:-webkit-linear-gradient(270deg,#eee 45%,#ddd 0,#bbb)}.title-bar-controls button{background:-webkit-linear-gradient(hsla(0,0%,100%,.3),hsla(0,0%,100%,.3) 45%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.1) 75%,hsla(0,0%,100%,.5))}</style>')
       }
       </script>
   </head>
 <body>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">home</div>
       <div class="title-bar-controls">
@@ -33,17 +33,9 @@
   </div>
 </div>
 
-<!--<audio id="player" src="vincent.mp3"></audio>
-<div> 
-  <button onclick="document.getElementById('player').play()">Play</button> 
-  <button onclick="document.getElementById('player').pause()">Pause</button> 
-  <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-  <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-</div>-->
-
 
 <div class="window-body">
-  <div class="center"><img src="assets/spinmint.gif" style="max-width: 5%;"> <img src="assets/logo.gif" style="max-width: 50%;"> <img src="assets/spinmint.gif" style="max-width: 5%;"><br>
+  <div class="center"><img src="assets/spinmint.gif" alt="spinmint" style="max-width: 5%;"> <img src="assets/logo.gif" alt="trickmint website" style="max-width: 50%;"> <img src="assets/spinmint.gif" alt="spinmint" style="max-width: 5%;"><br>
     <script src="music.js"></script>
     <audio src="a.html" id="song" autoplay="true">
     Your browser does not support the audio element.
@@ -52,11 +44,8 @@
       <button onclick="window.location.href = '#listeningto';">current song</button>
       <button id="playtoggle" onclick="togglePlay()">play/pause</button> 
       <button id="skip" onclick="skipSong()">skip song</button>
-      <!--!<button onclick="document.getElementById('song').volume += 0.1">vol +</button>-->
-      <!--!button onclick="document.getElementById('song').volume -= 0.1">vol -</button>--> 
     <br>
-      <p>volume</p>
-      <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
+      <input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)" style="max-width:80px"></input>
       <div id="vol"></div>
       <center>
         <div class="w3-container">
@@ -68,7 +57,7 @@
 </div>
 
 <div class="listeningto">
-  <div class="window is-bright" id="listeningto" role="dialog" aria-labelledby="dialog-title">
+  <div class="window glass is-bright" id="listeningto" role="dialog" aria-labelledby="dialog-title">
     <div class="title-bar">
     <div class="title-bar-text" id="dialog-title">trickmint radio.exe</div>
       <div class="title-bar-controls">
@@ -87,7 +76,7 @@
   </div>
 </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">about me</div>
       <div class="title-bar-controls">
@@ -113,7 +102,7 @@
       </div>
     </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">random spearmint</div>
       <div class="title-bar-controls">
@@ -125,8 +114,8 @@
       <div class="window-body">
         <div class="randSpearmint">
           <div id="divmints" class="loadingmints">
-            <img src="spearmint/err.png" id="spearmint" class="spearmint">
-            <img src="loadmint.gif" class="loadmint">
+            <img src="spearmint/err.png" alt="" id="spearmint" class="spearmint">
+            <img src="assets/loadmint.gif" alt="loadmint" class="loadmint">
         </div><br>
           <span id="spearCred">by kuro2427</span>
           <br>
@@ -139,26 +128,7 @@
     </div>
 </div>
 
-<!-- TODO not working for some reason?? fix Soon™
-!<div class="window">
-  !<div class="title-bar">
-    !<div class="title-bar-text">hourly platinum foxes</div>
-      !<div class="title-bar-controls">
-        !<button aria-label="Minimize"></button>
-        !<button aria-label="Maximize"></button>
-        !<button aria-label="Close"></button>
-      !</div>
-    !</div>
-      !<div class="window-body">
-        !<center>
-          !<a class="twitter-timeline" data-width="1000" data-height="1000" data-theme="dark" href="https://twitter.com/platinumfoxes?ref_src=twsrc%5Etfw">Tweets by platinumfoxes</a> <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script> 
-        !</center>
-      !</div>
-    !</div>
-!</div>
-!-->
-
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">cool fox website</div>
       <div class="title-bar-controls">
@@ -170,13 +140,13 @@
       <div class="window-body">
         <center>
           <a href="http://fox-info.net/" title="fox-info" rel="home">
-            <img src="fox-info_logo.png" class="fox-info" width="auto" height="auto" alt="fox-info"></a>
+            <img src="assets/fox-info_logo.png" class="fox-info" width="auto" height="auto" alt="fox-info.net"></a>
         </center>
       </div>
     </div>
 </div>
 
-<div class="window">
+<div class="window glass">
   <div class="title-bar">
     <div class="title-bar-text">my button!</div>
       <div class="title-bar-controls">
@@ -188,11 +158,9 @@
       <div class="window-body">
         <center>
           <b>this website has a button!</b><br><br>
-          --&gt; <a href="index.html"><img src="buttons/me.gif"></a> &lt;-- <br><br>
-          <textarea rows="3" cols="40">&lt;a href="http://trickmint.gay"&gt;&lt;img src="http://trickmint.gay/buttons/me.gif"&gt;&lt;/a&gt;</textarea><br><br> 
+          --&gt; <a href="index.html"><img src="buttons/me.gif" alt="trickmint.gay"></a> &lt;-- <br><br>
+          <textarea rows="3" cols="40">&lt;a href="http://trickmint.gay"&gt;&lt;img src="http://trickmint.gay/buttons/me.gif" alt="trickmint.gay"&gt;&lt;/a&gt;</textarea><br><br> 
           (You should probably not hotlink the image tho)
-          <!--print pack"C*",split/\D+/,`echo "16iII*o\U@{$/=$z;[(pop,pop,unpack"H*",<>
-          )]}\EsMsKsN0[lN*1lK[d2%Sa2/d0<X+d*lMLa^*lN%0]dsXx++lMlN/dsM0<J]dsJxp"|dc` -->
         </center>
       </div>
     </div>
@@ -200,39 +168,39 @@
 
 <div class = "imagebuttons" style="width:800px;">
   <marquee truespeed scrollamount="1" scrolldelay="1">
-    <a href="http://radio.kuro.gay/"><img src="buttons/skedgradio.gif"></a>
+    <a href="http://radio.kuro.gay"><img src="buttons/skedgradio.gif" alt="Skedgychat Radio Now!"></a>
 
-    <img src="buttons/antinft.gif"></img>
+    <img src="buttons/antinft.gif" alt="This is an Anti-NFT Site"></img>
 
-    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="buttons/getff.gif"></a>
+    <a href="http://mozilla.org/firefox/new"><img src="buttons/getff.gif" alt="Get Firefox"></a>
 
-    <a href="http://kuro.gay/"><img src="buttons/kuro.gif"></a>
+    <a href="http://kuro.gay"><img src="buttons/kuro.gif" alt="kuro.gay"></a>
 
-    <a href="https://elisttm.space/"><img src="buttons/elisttmspace.gif" width="88" height="31"></a>
+    <a href="http://elisttm.space"><img src="buttons/elisttmspace.gif" alt="elisttm.space"></a>
 
-    <a href="https://png103.neocities.org/" target="_blank"><img src="buttons/png103.gif"></a>
+    <a href="http://png103.neocities.org"><img src="buttons/png103.gif" alt="PNG103"></a>
 
-    <img src="buttons/cheezit.gif" alt="cheezit" width="88" height="31">
+    <img src="buttons/cheezit.gif" alt="Built Eating Cheez-It">
 
-    <a href="../i.gifer.com/origin/a0/a07ad08920f303f655251b1a0b353b86_w200.gif"><img src="buttons/click_here.gif" alt="click_here" width="88" height="31"></a>
+    <a href="http://i.gifer.com/origin/a0/a07ad08920f303f655251b1a0b353b86_w200.gif"><img src="buttons/click_here.gif" alt="CLICK HERE!"></a>
 
-    <img src="buttons/ace.gif" width="88" height="31">
+    <img src="buttons/ace.gif" alt="Asexual flag">
 
-    <a href="https://store.steampowered.com/app/620/Portal_2/"><img src="buttons/portal.gif"></a>
+    <a href="http://store.steampowered.com/app/620"><img src="buttons/portal2.gif" alt="Portal 2 Now!"></a>
 
-    <a href="https://store.steampowered.com/app/420530/OneShot/"><img src="buttons/oneshot.gif"></a>
+    <a href="http://store.steampowered.com/app/420530"><img src="buttons/oneshot.gif" alt="OneShot Now!"></a>
 
-    <a href="https://twitter.com/cutieyosaf"><img src="buttons/yosaf.png"></a>
+    <a href="http://twitter.com/cutieyosaf"><img src="buttons/yosaf.png" alt="yosaf"></a>
 
-    <a href="https://youtube.com/@Nightcaat"><img src="buttons/nightcat.gif"></a>
+    <a href="http://youtube.com/@Nightcaat"><img src="buttons/nightcat.gif" alt="Nightcat"></a>
 
-    <a href="https://twitter.com/blueyGH"><img src="buttons/bluey.gif"></a>
+    <a href="http://twitter.com/blueyGH"><img src="buttons/bluey.gif" alt="bluey"></a>
 
-    <a href="https://en.wikipedia.org/wiki/Sheldon_Cooper"><img src="buttons/booga.gif"></a>
+    <a href="http://en.wikipedia.org/wiki/Sheldon_Cooper"><img src="buttons/booga.gif" alt="Booga"></a>
 
-    <a href="https://twitter.com/SG_NitroSilver"><img src="buttons/nitrosilver.gif"></a>
+    <a href="http://twitter.com/SG_NitroSilver"><img src="buttons/nitrosilver.gif" alt="NitroSilver"></a>
 
-    <a href="https://gayfennecs.github.io/"><img src="buttons/scrunkly.gif"></a>
+    <a href="http://gayfennecs.github.io"><img src="buttons/scrunkly.gif" alt="scrunkly"></a>
   </marquee>
 </div>
 

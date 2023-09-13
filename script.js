@@ -255,6 +255,7 @@ function refreshSpearmint() {
     img.onload = hideLoadmint;
     div.classList.add("loadingmints");
     img.src = "spearmint/" + spearmints[rand];
+    img.alt = spearmints[rand];
     artist.textContent = "by " + artists[rand];
 }
 function onLoad() {
