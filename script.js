@@ -116,7 +116,17 @@ var spearmints = [
         "spinda_comm_7_i_think-transformed.jpeg",
         "mint.png",
         "image.png",
-        "fuck yoy.png"
+        "fuck yoy.png",
+        "01image.png",
+        "Untitled160_20231030193842.png",
+        "IMG_3861.png",
+        "Screenshot_20231107_230754_Gallery.jpg",
+        "20230206_200855.jpg",
+        "Untitled1645_20230916132122.png",
+        "spearmint neco arc.png",
+        "long chip.png",
+        "OsD-hmeZ.png",
+        "IMG_1983.gif"
     ];
 
 var artists = [
@@ -211,7 +221,7 @@ var artists = [
         "extrasome5", 
         "luna855", 
         "JADEN61805644", 
-        "TheBigK#0001", 
+        "pigeonpriest", 
         "fluffy_yyy", 
         "JADEN61805644", 
         "Cybexxr#0073", 
@@ -237,7 +247,17 @@ var artists = [
         "lobsylobs",
         "cereious",
         "extrasome5",
-        "cereious"
+        "cereious",
+        "kuro2427",
+        "N/A",
+        "N/A",
+        "JADEN61805644",
+        "JADEN61805644",
+        "_fartball26_",
+        "pigeonpriest",
+        "kuro2427",
+        "gabrydraws",
+        "N/A"
     ];
 
 var img;
