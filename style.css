@@ -48,3 +48,26 @@ html {
     justify-content: center;
     align-items: center;
     height: 200px}
+
+#mintversion, #mintbuild {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font: 12px Segoe UI;
+    color: #fff;
+/* Fallback for browsers not using fixed positioning
+so that the text still aligns to the right anyway */
+    text-align: right
+}
+/* Not a good solution; some browsers support fixed positioning
+but not the @supports media query. This needs to be replaced */
+@supports (position: fixed) {
+    #mintversion, #mintbuild {
+        position: fixed;
+        right: 5px}
+    #mintversion {
+        bottom: 19px}
+    #mintbuild {
+        bottom: 1px}}
