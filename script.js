@@ -126,7 +126,19 @@ var spearmints = [
         "spearmint neco arc.png",
         "long chip.png",
         "OsD-hmeZ.png",
-        "IMG_1983.gif"
+        "IMG_1983.gif",
+        "26BC8098-376A-4257-97C4-EAC683AB48E8.png",
+        "Untitled178_20231129202500.png",
+        "Untitled177_20231129160458.png",
+        "Untitled179_20231129204119.png",
+        "20231129_102441.jpg",
+        "EVILS.png",
+        "Untitled263_20240306102651.png",
+        "IMG_2836.png",
+        "132_20240308000228.png",
+        "unnamed.png",
+        "extrasome silly ,,,.png",
+        "unnamed1.png"
     ];
 
 var artists = [
@@ -257,7 +269,19 @@ var artists = [
         "pigeonpriest",
         "kuro2427",
         "gabrydraws",
-        "N/A"
+        "N/A",
+        "kodasfire",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A",
+        "skedgyedgy",
+        "fallingdemon.",
+        "fsa1337",
+        "lurouyun_yun",
+        "Youisdead",
+        "extrasome5",
+        "Youisdead"
     ];
 
 var img;
