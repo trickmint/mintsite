@@ -1,3 +1,3 @@
-# trickmint.github.io
+# mintsite
 
-the github page for my website
+the source code for my website
