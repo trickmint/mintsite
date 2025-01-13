@@ -1,55 +1,106 @@
-.window.glass {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px)}
-
-.window.is-bright {
-    max-width: 350px}
-
-.listeningto {
-    margin-left: 300px;
-    margin-right: 300px;
-    width: 300px;
-    max-width: 350px}
-
-.imagebuttons {
-    margin-left: auto;
-    margin-right: auto}
-
-html {
-    background-color: #9EE3FA;
-    background-image: url('assets/bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 20px}
-
-.center, .randSpearmint {
-    text-align: center}
-
-.randSpearmint img{
-    max-width: 60%}
-
-.rainbowText {
-    text-align: center;
-    font-size: 25px;
-    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,yellow,orange,red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: move 40s linear infinite}
-
-@keyframes move {
-	to {
-		background-position: 350vh;
-    }
+@font-face {
+    font-family: 'frutiger-bold';
+    src: url('assets/fonts/frutiger-bold.otf');
 }
 
-.kin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px}
+@font-face {
+    font-family: 'gardenia-sans';
+    src: url('assets/fonts/gardenia-sans.ttf');
+}
 
-#mintversion, #mintbuild {
+body{
+    cursor: url(assets/windows7_arrow.cur), auto;
+    background-image: url('assets/backgrounds/win7.jpg');
+    background-color: #9EE3FA;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 20px
+}
+
+main{
+    margin: auto;
+    max-width: 700px;
+}
+
+button{
+    cursor: url(assets/windows7_arrow.cur), auto;
+}
+
+li{
+    cursor: url(assets/windows7_arrow.cur), auto;
+}
+
+a{
+    cursor: url(assets/windows7_link.cur), pointer;
+}
+
+.window{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+    margin: 0px;
+}
+
+.maincontent{
+    padding: 20px;
+}
+
+.c{
+    text-align: center;
+}
+
+.header img{
+    max-width:100%;
+}
+
+.fox-info{
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
+}
+
+img.spearmint { 
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+    transition-property: filter;
+    transition-duration: 500ms;
+    filter: blur(0);
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    img.spearmint { 
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        transition-property: filter;
+        transition-duration: 500ms;
+        filter: blur(0);
+    }
+  }
+  
+  img.loadmint {
+    display: none;
+    image-rendering: pixelated;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: calc(50% - 60px);
+    left: calc(50% - 40px);
+  }
+  
+  div.loadingmints img.spearmint {
+    filter: blur(32px);
+    transition-duration: 2500ms;
+  }
+  
+  div.loadingmints img.loadmint {
+    display: block;
+  }
+
+  #mintversion, #mintbuild {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -63,6 +114,7 @@ so that the text still aligns to the right anyway */
 }
 /* Not a good solution; some browsers support fixed positioning
 but not the @supports media query. This needs to be replaced */
+/*Lol, lmao even*/
 @supports (position: fixed) {
     #mintversion, #mintbuild {
         position: fixed;
