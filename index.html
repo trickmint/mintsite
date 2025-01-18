@@ -12,6 +12,20 @@
     
     <main>
 
+      <div class="radio" id="ratio">
+        <div class="window glass active">
+          <div class="title-bar">
+            <div class="title-bar-text">fops radio!</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close" onclick="toggleRadio()"></button>
+            </div>
+          </div>
+          <div class="window-body">
+              <iframe width="380" height="215" src="https://www.youtube.com/embed/videoseries?si=KpFN5lQdsH3xEuDG&amp;controls=0&amp;list=PL1MP6Vgkp14OWRhCK0j-ckj8VDTu5Shx5&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
         <div class="window glass active">
             <div class="title-bar">
             <div class="title-bar-text">trickmint.gay</div>
@@ -56,6 +70,7 @@
                         <p>some of my interests are: lapfox trax, <b>portal 2</b>, ut/dr, glitchtale, and underverse.</p>
                         <a href="kinlist"><button>epic kinlist</button></a>
                         <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34853-2c"><button>my guestbook</button></a>
+                        <button onclick="toggleRadio()">now playing</button>
                     </div>
                 </div>
 
@@ -190,6 +205,20 @@
     }
 
     window.onload = randomBanner();
+</script>
+
+<script>
+  function toggleRadio(){
+      YTEmbed=document.getElementById('ratio');
+      radioDisplay=window.getComputedStyle(YTEmbed, null).display;
+
+      if(radioDisplay=="none"){
+        YTEmbed.style.display="block";
+      }
+      else{
+        YTEmbed.style.display="none";
+      }
+  }
 </script>
 
 <script src="script.js" type="text/javascript"></script>
