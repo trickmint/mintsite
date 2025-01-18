@@ -18,24 +18,37 @@
         margin: auto;
     }
 
-    iframe{
-        margin: auto;
+    #mobile{
+        display: none;
     }
-    #frame { zoom: 0.8; -moz-transform: scale(0.8); -moz-transform-origin: 0 0; }
-    
-    @media only screen and (min-width: 768px) {
-        #wrap { width: 640px; height: 485px; padding: 0; overflow: hidden; }
-        #frame { width: 640px; height: 485px; border: 1px solid black; }
-        #frame { zoom: 1; -moz-transform: scale(1); -moz-transform-origin: 0 0; }
+
+    @media (max-width: 768px) {
+        #mobile{
+            display: inline;
+        }
+
+        #main{
+            display: none;
+        }
     }
 </style>
 <body>
     <h2>404!</h2>
     <p>Page not found</p>
     <br>
-    <div id="wrap">
-        <iframe src="404anim/index.html" frameborder="0" width="640", height="485" id="frame"></iframe>
+    <div>
+        <iframe src="404anim/index.html" frameborder="0" width="320", height="243" id="mobile"></iframe>
     </div>
+
+    <div>
+        <iframe src="404anim/index.html" frameborder="0" width="640", height="485" id="main"></iframe>
+    </div>
+
+    <!--Okay, yeah, this is a mildly retarded way to do it, but it works, 
+    is easy to set up on the GameMaker end and should really only be a problem 
+    if your phone magically becomes a desktop PC or vice-versa. And either way, 
+    you can just reload the page if they're both playing at once or whatever :sweetpotato:-->
+
     <br>
     <p>(Click to unmute, best viewed on Desktop)</p>
     
