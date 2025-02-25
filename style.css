@@ -134,7 +134,7 @@ but not the @supports media query. This needs to be replaced */
         font: 12px Segoe UI;
     /* Fallback for browsers not using fixed positioning
     so that the text still aligns to the right anyway */
-        text-align: right
+        text-align: left;
     }
     /* Not a good solution; some browsers support fixed positioning
     but not the @supports media query. This needs to be replaced */
@@ -144,4 +144,5 @@ but not the @supports media query. This needs to be replaced */
             position: fixed;
             bottom: 45px;
             left: 20px
-        }}
+        }
+    }
