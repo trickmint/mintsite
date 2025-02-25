@@ -100,7 +100,7 @@ img.spearmint {
     display: block;
   }
 
-  #mintversion, #mintbuild {
+    #mintversion, #mintbuild {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -123,3 +123,25 @@ but not the @supports media query. This needs to be replaced */
         bottom: 45px}
     #mintbuild {
         bottom: 27px}}
+
+/* copying the mintbuild code one-for-one so i can use it for the webring heehee */
+    #computeringtip{
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font: 12px Segoe UI;
+    /* Fallback for browsers not using fixed positioning
+    so that the text still aligns to the right anyway */
+        text-align: right
+    }
+    /* Not a good solution; some browsers support fixed positioning
+    but not the @supports media query. This needs to be replaced */
+    /*Lol, lmao even*/
+    @supports (position: fixed) {
+        #computeringtip{
+            position: fixed;
+            bottom: 45px;
+            left: 20px
+        }}
