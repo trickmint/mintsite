@@ -118,11 +118,11 @@ but not the @supports media query. This needs to be replaced */
 @supports (position: fixed) {
     #mintversion, #mintbuild {
         position: fixed;
-        right: 5px}
+        right: 8px}
     #mintversion {
-        bottom: 45px}
+        bottom: 25px}
     #mintbuild {
-        bottom: 27px}}
+        bottom: 5px}}
 
 /* copying the mintbuild code one-for-one so i can use it for the webring heehee */
     #computeringtip{
@@ -142,7 +142,28 @@ but not the @supports media query. This needs to be replaced */
     @supports (position: fixed) {
         #computeringtip{
             position: fixed;
-            bottom: 45px;
-            left: 20px
+            bottom: 25px;
+            left: 15px
+        }
+    }
+
+    .radio{
+        display: none;
+        position: fixed;
+        z-index: 100;
+        right: 5.5vw;
+        top: 5vh;
+    }
+    
+    @media only screen and (max-width: 768px) and (orientation: portrait) {
+        .radio{
+            position: fixed;
+            display: none;
+            z-index: 100;
+            bottom: 0.1%;
+            left: 0; 
+            right: 0; 
+            margin-inline: auto; 
+            width: fit-content;
         }
     }
