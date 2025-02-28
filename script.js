@@ -265,7 +265,7 @@ var artists = [
         "N/A",
         "JADEN61805644",
         "JADEN61805644",
-        "_fartball26_",
+        "fartball26_",
         "pigeonpriest",
         "kuro2427",
         "gabrydraws",
