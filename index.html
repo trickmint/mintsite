@@ -45,6 +45,7 @@
                 <li role="menuitem" tabindex="0" onclick="window.open('pages/')">Pages</li>
                 <li role="menuitem" tabindex="0" onclick="window.open('http://users3.smartgb.com/g/g.php?a=s&i=g36-34853-2c')">Guestbook</li>
                 <li role="menuitem" tabindex="0" onclick="toggleRadio()">Radio</li>
+                <li role="menuitem" tabindex="0" onclick="window.open('sonas/')">Sonas</li>
             </ul>
                 
             <div class="header">
@@ -154,6 +155,50 @@
             </div>
         </div>
 
+        <div class="window glass active" style="max-height: 500px;">
+            <div class="title-bar">
+                <div class="title-bar-text">changelog</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="maincontent">
+                    <div class="c">
+                        <p><b>changes</b> (clickable)</p>
+                        <ul role="listbox" class="has-hover changelog-list">
+                          <a href="#c2025-05-25"><li role="option">2025.05.25</li></a>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!--CHANGE LOGS BEGIN HERE. there is probably a better way to do this but i'm not finding it!!!! hahahahah-->
+
+        <div class="window active is-bright changelog-dialogue" id="c2025-05-25" role="dialog" aria-labelledby="dialog-title" style="max-width:450px">
+          <div class="title-bar">
+            <div class="title-bar-text" id="dialog-title">Changes</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close" onclick="history.back()"></button>
+            </div>
+          </div>
+          <div class="window-body has-space">
+            <h2 class="instruction instruction-primary">Changes in build 2025.05.25:</h2>
+            <ul>
+              <li>Added this changelog!</li>
+              <li>Added the /sonas page. Once I finish each sona page, this will be a place where people can see information and ref sheets for all my characters.</li>
+            </ul>
+          </div>
+          <footer style="text-align: right">
+            <button onclick="history.back()">Close</button>
+          </footer>
+        </div>
+      <!-- end of 2025.05.25 -->
+
     <marquee scrollamount="5">
             
       <img src="assets/buttons/antinft.gif" alt="This is an Anti-NFT Site"></img>
@@ -193,7 +238,7 @@
 
 <div id="mintversion">mintsite</div>
 <!-- Mint build date uses YYYY.MM.DD -->
-<div id="mintbuild">Build 2025.05.19</div>
+<div id="mintbuild">Build 2025.05.25</div>
 
 <div role="tooltip" style="max-width:fit-content; margin-left: auto; margin-right:auto;" id="computeringtip" class="is-top is-right">
   <div id='computering'>
