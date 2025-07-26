@@ -1,19 +1,24 @@
-on: [push]
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
-    name: deploy2nekoweb
+    
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        
-      # your build step here
-        
-      - name: deploy2nekoweb
-        uses: indiefellas/deploy2nekoweb
-        with:
-          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-          nekoweb-folder: '/'
-          directory: '/'
 
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+          BUILD_DIR: './build'
+          DEPLOY_DIR: '/'
+          CLEANUP: 'False'
+          DELAY: '0.5'
+          NEKOWEB_PAGENAME: 'trickmint'
