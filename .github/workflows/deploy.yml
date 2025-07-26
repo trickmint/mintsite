@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Prepare build
+        run: |
+          mkdir -p ./build
+          cp -r ./public/* ./build
+
       - name: Deploy to Nekoweb
         uses: mp-pinheiro/nekoweb-deploy@main
         with:
@@ -21,5 +26,5 @@ jobs:
           DEPLOY_DIR: '/'
           CLEANUP: 'False'
           DELAY: '0.5'
-          NEKOWEB_PAGENAME: 'trickmint.gay'
-          DEBUG: 'True'
+          NEKOWEB_PAGENAME: 'trickmint'
+          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
