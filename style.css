@@ -167,3 +167,17 @@ but not the @supports media query. This needs to be replaced */
             width: fit-content;
         }
     }
+
+    .changelog-dialogue{
+        min-width:400px;
+    }
+
+    .changelog-list {
+        max-height: 10em; /* Adjust based on your li height, 5 items tall */
+        overflow-y: auto;
+        padding-right: 8px; /* Space for scrollbar */
+    }
+    .changelog-list li {
+        /* Optional: ensure consistent height */
+        line-height: 1.7em;
+    }
