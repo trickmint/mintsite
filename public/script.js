@@ -161,7 +161,16 @@ var spearmints = [
         "20250114_144824.jpg",
         "Untitled346_20250404135206.png",
         "icon.png",
-        "Untitled41_1.png"
+        "Untitled41_1.png",
+        "mint sitting.png",
+        "m5ndT8Vmok9mkDqHW3NYDezTtwdiBSACIJBsWJ2Oz4kuAFeiuwmcxhNSsNxK.jpg",
+        "bafkreid4bob46uhtwxhhniujqnyrwb2e2ekbmc3takkdhmw5rgmb7zngza.jpg",
+        "SpearmanIII.png",
+        "Untitled69_20250617095444.png",
+        "IMG_1072.png",
+        "Untitled108_20250606181220.png",
+        "Untitled600_20250602103918.jpg",
+        "Untitled44_1.png"
     ];
 
 var artists = [
@@ -327,6 +336,15 @@ var artists = [
         "audio_ori",
         "kniphie",
         "hegehogg",
+        "me!",
+        "me!",
+        "DawnSoap",
+        "notcitraemu",
+        "audio_ori",
+        "ziggy8580",
+        "mamaskittles",
+        "JADEN61805644",
+        "kniphie",
         "me!"
     ];
 
