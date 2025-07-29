@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'frutiger-bold';
+    src: url('assets/fonts/frutiger-bold.otf');
+}
+
+@font-face {
+    font-family: 'gardenia-sans';
+    src: url('assets/fonts/gardenia-sans.ttf');
+}
+
+body{
+    cursor: url(assets/windows7_arrow.cur), auto;
+    background-image: url('assets/backgrounds/win7.jpg');
+    background-color: #9EE3FA;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 20px
+}
+
+main{
+    margin: auto;
+    max-width: 700px;
+}
+
+button{
+    cursor: url(assets/windows7_arrow.cur), auto;
+}
+
+li{
+    cursor: url(assets/windows7_arrow.cur), auto;
+}
+
+a{
+    cursor: url(assets/windows7_link.cur), pointer;
+}
+
+.window{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header{
+    margin: 0px;
+}
+
+.maincontent{
+    padding: 20px;
+}
+
+.c{
+    text-align: center;
+}
+
+.header img{
+    max-width:100%;
+}
+
+.fox-info{
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
+}
+
+img.spearmint { 
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+    transition-property: filter;
+    transition-duration: 500ms;
+    filter: blur(0);
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    img.spearmint { 
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        transition-property: filter;
+        transition-duration: 500ms;
+        filter: blur(0);
+    }
+  }
+  
+  img.loadmint {
+    display: none;
+    image-rendering: pixelated;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: calc(50% - 60px);
+    left: calc(50% - 40px);
+  }
+  
+  div.loadingmints img.spearmint {
+    filter: blur(32px);
+    transition-duration: 2500ms;
+  }
+  
+  div.loadingmints img.loadmint {
+    display: block;
+  }
+
+    #mintversion, #mintbuild {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font: 12px Segoe UI;
+    color: #fff;
+/* Fallback for browsers not using fixed positioning
+so that the text still aligns to the right anyway */
+    text-align: right
+}
+/* Not a good solution; some browsers support fixed positioning
+but not the @supports media query. This needs to be replaced */
+/*Lol, lmao even*/
+@supports (position: fixed) {
+    #mintversion, #mintbuild {
+        position: fixed;
+        right: 8px}
+    #mintversion {
+        bottom: 25px}
+    #mintbuild {
+        bottom: 5px}}
+
+/* copying the mintbuild code one-for-one so i can use it for the webring heehee */
+    #computeringtip{
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font: 12px Segoe UI;
+    /* Fallback for browsers not using fixed positioning
+    so that the text still aligns to the right anyway */
+        text-align: left;
+    }
+    /* Not a good solution; some browsers support fixed positioning
+    but not the @supports media query. This needs to be replaced */
+    /*Lol, lmao even*/
+    @supports (position: fixed) {
+        #computeringtip{
+            position: fixed;
+            bottom: 25px;
+            left: 15px
+        }
+    }
+
+    .radio{
+        display: none;
+        position: fixed;
+        z-index: 100;
+        right: 5.5vw;
+        top: 5vh;
+    }
+    
+    @media only screen and (max-width: 768px) and (orientation: portrait) {
+        .radio{
+            position: fixed;
+            display: none;
+            z-index: 100;
+            bottom: 0.1%;
+            left: 0; 
+            right: 0; 
+            margin-inline: auto; 
+            width: fit-content;
+        }
+    }
+
+    .changelog-dialogue{
+        min-width:400px;
+    }
+
+    .changelog-list {
+        max-height: 10em; /* Adjust based on your li height, 5 items tall */
+        overflow-y: auto;
+        padding-right: 8px; /* Space for scrollbar */
+    }
+    .changelog-list li {
+        /* Optional: ensure consistent height */
+        line-height: 1.7em;
+    }

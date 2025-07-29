@@ -1,0 +1,64 @@
+/* 
+    Don't use this file to edit your site style! Create a different CSS file for that.
+    This file defines how custom elements (like sitebox) will look like.
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
+*/
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+    text-align: center;
+    background-position: left center;
+    background-image: url(https://trickmint.nekoweb.org/assets/my_bg.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #b08271;
+    font-size: 12px;
+}
+.site-box .sitefeature {
+	top: 20px;
+}
+.site-box > a > p {
+    color: black;
+    font-weight: normal;
+    font-family:  "Segoe UI", sans-serif;
+    font-size:20px;
+    background-color: #F0F0F0;
+    padding:7px;
+    display:inline-block;
+    background-clip:padding-box;
+    border-radius: 20px 20px 0px 0px;
+    bottom:10px;
+}
+.site-box > a > span {
+	display:none;
+    color: black;
+    font-weight: lighter;
+    font-family:  "Segoe UI", sans-serif;
+    background-color: #F0F0F0;
+    padding-left:3px;
+    padding-top:5px;
+    background-clip: padding-box;
+    border-radius: 10% 0% 0% 0%;
+}
+
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+.follow {
+
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+    background-color: #fff2cc;
+    border: 4px solid #ecbfa6;
+    padding: 15px;
+    border-radius: 5px;
+    color: #634c53;
+    font-weight: normal;
+}
+
+.post-box .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

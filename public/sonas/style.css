@@ -1,0 +1,31 @@
+#icos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center; /* Changed from 'center' to an absolute value */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+#icos img {
+    transition: margin 0.3s;
+}
+
+/* Responsive spacing */
+@media (min-width: 600px) {
+    #icos {
+        gap: 2rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    #icos {
+        gap: 6rem;
+        padding: 2rem;
+    }
+}
