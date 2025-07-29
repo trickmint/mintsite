@@ -1,29 +1,23 @@
 name: Deploy to Nekoweb
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
-    
+    name: deploy2nekoweb
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Prepare build
-        run: |
-          mkdir -p ./build
-          cp -r ./public/* ./build
-
-      - name: Deploy to Nekoweb
-        uses: mp-pinheiro/nekoweb-deploy@main
+        
+      # your build step here
+        
+      - name: deploy2nekoweb
+        uses: indiefellas/deploy2nekoweb@main
         with:
-          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
-          BUILD_DIR: './build'
-          DEPLOY_DIR: '/'
-          CLEANUP: 'False'
-          DELAY: '0.5'
-          NEKOWEB_PAGENAME: 'trickmint'
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          # nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
+          nekoweb-domain: 'trickmint.gay'
+          nekoweb-username: 'trickmint'
+          directory: 'public'
+
